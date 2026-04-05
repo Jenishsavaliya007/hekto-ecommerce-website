@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hekto - Checkout</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/shopping_cart.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+
+  <!-- Top Bar -->
+  <div class="top-bar" role="region" aria-label="Top contact and utility bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="mailto:mhhasanul@gmail.com"><span class="material-icons md-16"
+            aria-hidden="true">mail</span><span>mhhasanul@gmail.com</span></a>
+        <span class="separator">&bull;</span>
+        <a href="tel:+1234567890"><span class="material-icons md-16"
+            aria-hidden="true">phone</span><span>(12345)67890</span></a>
+      </div>
+      <div class="top-bar-right" aria-label="Secondary navigation">
+        <a href="#" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu"><span>English</span><span
+            class="material-icons md-16" aria-hidden="true">arrow_drop_down</span></a>
+        <span class="separator">&bull;</span>
+        <a href="#" aria-haspopup="true" aria-expanded="false" aria-controls="currency-menu"><span>USD</span><span
+            class="material-icons md-16" aria-hidden="true">arrow_drop_down</span></a>
+        <span class="separator">&bull;</span>
+        <a href="my account.html" aria-label="Login"><span class="material-icons md-16"
+            aria-hidden="true">person_outline</span>Login</a>
+        <span class="separator">&bull;</span>
+        <a href="#" aria-label="Wishlist"><span class="material-icons md-16"
+            aria-hidden="true">favorite_border</span>Wishlist</a>
+        <span class="separator">&bull;</span>
+        <a href="checkout.html" aria-label="Checkout"><span class="material-icons md-16"
+            aria-hidden="true">shopping_cart</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+
+
+  <!-- Breadcrumb Section -->
+  <section class="breadcrumb-section" aria-label="Breadcrumb navigation">
+    <div class="container">
+      <h1 class="breadcrumb-title">Checkout</h1>
+      <nav class="breadcrumb-path" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>·</span>
+        <a href="grid default.html">Pages</a>
+        <span>·</span>
+        <a href="#" aria-current="page" style="color: var(--color-pink-alt);">checkout</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Cart Content -->
+  <main class="cart" tabindex="0">
+    <div class="container">
+
+      <div
+        style="background: white; padding: 32px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 24px;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; color: #17173b;">Hekto Checkout Information
+        </h2>
+        <form id="checkout-form" style="display: grid; gap: 16px;">
+          <input type="text" placeholder="Email or mobile phone number" required
+            style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 4px;" />
+          <div style="font-weight: 600; margin-top: 16px;">Shipping Address</div>
+          <div style="display: flex; gap: 16px;">
+            <input type="text" placeholder="First name" required
+              style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 4px;" />
+            <input type="text" placeholder="Last name" required
+              style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 4px;" />
+          </div>
+          <input type="text" placeholder="Address" required
+            style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 4px;" />
+          <input type="text" placeholder="City" required
+            style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 4px;" />
+          <div style="display: flex; gap: 16px;">
+            <input type="text" placeholder="State/Province" required
+              style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 4px;" />
+            <input type="text" placeholder="Postal code" required
+              style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 4px;" />
+          </div>
+          <button type="submit"
+            style="background: #22c55e; color: white; border: none; padding: 16px; font-weight: 700; border-radius: 4px; margin-top: 16px; cursor: pointer;">Complete
+            Final Order</button>
+        </form>
+      </div>
+
+
+      <aside class="cart-sidebar" aria-label="Cart totals and shipping calculator">
+        <h3>Cart Totals</h3>
+        <div class="totals-row">
+          <span>Subtotals:</span>
+          <span>£219.00</span>
+        </div>
+        <div class="totals-row" style="font-weight: 700;">
+          <span>Totals:</span>
+          <span>£325.00</span>
+        </div>
+        <div class="info-note">
+          <span class="material-icons" aria-hidden="true">check_circle</span>
+          <span>Shipping &amp; taxes calculated at checkout</span>
+        </div>
+        <button class="checkout-btn" aria-label="Review Cart Totals">Review Cart Totals</button>
+
+        <section class="shipping-calculator" aria-label="Calculate shipping">
+          <h4>Calculate Shopping</h4>
+          <form>
+            <input type="text" name="country" placeholder="Bangladesh" aria-label="Country" />
+            <input type="text" name="city" placeholder="Mirpur Dhaka - 1200" aria-label="City" />
+            <input type="text" name="postalcode" placeholder="Postal Code" aria-label="Postal Code" />
+            <button type="submit">Calculate Shiping</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+
+</html>

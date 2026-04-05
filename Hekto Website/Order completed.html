@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Completed - Hekto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/order_completed.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+  <!-- Topbar -->
+  <div class="topbar" role="region" aria-label="Contact and user actions">
+    <div class="contact-info" aria-label="Email and phone">
+      <span aria-hidden="true" class="material-icons">email</span>
+      <a href="mailto:mhhasanul@gmail.com">mhhasanul@gmail.com</a>
+      <span aria-hidden="true" class="material-icons">phone</span>
+      <a href="tel:+1234567890">(12345)67890</a>
+    </div>
+    <div class="actions" aria-label="Language, currency, and user options">
+      <a href="#" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">English ▾</a>
+      <a href="#" aria-haspopup="listbox" aria-expanded="false" aria-label="Select currency">USD ▾</a>
+      <a href="my account.html" aria-label="Login to your account" title="Login"><span class="material-icons"
+          aria-hidden="true" style="font-size: 18px;">person</span> Login</a>
+      <a href="#" aria-label="Wishlist" title="Wishlist"><span class="material-icons" aria-hidden="true"
+          style="font-size: 18px;">favorite_border</span> Wishlist</a>
+      <a href="shopping cart.html" aria-label="Shopping cart" title="Cart"><span class="material-icons"
+          aria-hidden="true" style="font-size: 18px;">shopping_cart</span></a>
+    </div>
+  </div>
+  <!-- Header and nav -->
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-section" aria-label="Breadcrumb navigation">
+    <div class="container">
+      <h1>Order Completed</h1>
+      <p class="breadcrumb-text" aria-live="polite" aria-atomic="true">Home . Pages . <a href="#"
+          aria-current="page">Order Completed</a></p>
+    </div>
+  </section>
+
+  <!-- Order Completed Main Content -->
+  <main class="order-completed-section" role="main" aria-labelledby="order-completed-title">
+    <div class="order-completed-container">
+      <div class="icon-clock" aria-hidden="true">
+        <span class="material-icons">schedule</span>
+      </div>
+      <section class="order-message" id="order-completed-title" tabindex="0">
+        <span class="icon-checkmark material-icons" aria-hidden="true">check_circle</span>
+        <h2>Your Order Is Completed!</h2>
+        <p>
+          Thank you for your order! Your order is being processed and will be completed within 3-6 hours.
+          You will receive an email confirmation when your order is completed.
+        </p>
+        <button type="button" class="continue-btn" onclick="location.href='shop left sidebar.html';"
+          aria-label="Continue Shopping">
+          Continue Shopping
+        </button>
+      </section>
+      <div class="icon-checklist" aria-hidden="true" role="img" aria-label="Checklist icon">
+        <!-- Inline SVG checklist icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M9 16.17l-3.88-3.88a.996.996 0 10-1.41 1.41l4.59 4.59a.996.996 0 001.41 0l10-10a.996.996 0 10-1.41-1.41L9 16.17z" />
+        </svg>
+      </div>
+    </div>
+  </main>
+
+  <!-- Brands Bar -->
+  <div class="brands-bar" aria-label="Trusted brands">
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e0aaca2a-4511-46ed-9f5e-f8d7338f0432.png"
+      alt="Fashion Live brand logo in grey" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a79afcc5-6ec3-4312-b20a-88b819ac469b.png"
+      alt="Hand Crafted brand logo in grey" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a9ee9990-3154-4de1-b636-b4a44460776f.png"
+      alt="Mestonix brand logo in grey" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/daf107bc-ed77-4f9a-9ffa-948129b93a3e.png"
+      alt="Hello Sunshine brand logo in grey" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/863d0e43-6268-4e6d-a5c6-024602a118c2.png"
+      alt="Pure brand logo in grey" />
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Details - Hekto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/product_details.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+
+  <section class="breadcrumbs-section" aria-label="Page breadcrumb">
+    <div class="container">
+      <h1>Product Details</h1>
+      <p class="breadcrumbs">
+        <a href="index.html">Home</a> &bull;
+        <a href="grid default.html">Pages</a> &bull;
+        <span aria-current="page" style="color:#e91e63;">Product Details</span>
+      </p>
+    </div>
+  </section>
+
+  <main class="product-detail" role="main" aria-labelledby="product-title">
+    <div class="image-gallery">
+      <div class="thumbnail-list" aria-label="Product thumbnails">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a897b61-63c3-4e51-be72-e08ea0c7506c.png"
+          alt="Small black bag side view" tabindex="0" class="active" />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/02eb8b4d-01aa-4791-85d5-740735176bdf.png"
+          alt="Black lamp placed near wall" tabindex="0" />
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5fa5fadb-49c2-46d2-bcdf-5cdd8f670e29.png"
+          alt="Colorful woven bag hanging" tabindex="0" />
+      </div>
+      <div class="main-image" tabindex="0" aria-live="polite" aria-label="Selected product image">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/09365007-3752-4bf3-82b7-a4fef5fcbb3f.png"
+          alt="Black leather handbag on white background" id="product-main-image" />
+      </div>
+    </div>
+    <article class="product-info">
+      <h2 id="product-title">Playwood arm chair</h2>
+      <div class="rating" aria-label="Rating: 5 stars with 22 reviews">
+        <span aria-hidden="true">★★★★★</span>
+        <span class="count">(22)</span>
+      </div>
+      <p class="price">
+        $32.00
+        <span class="old-price" aria-label="Original price $32.00">$32.00</span>
+      </p>
+      <p class="color-label"><strong>Color</strong></p>
+      <p class="description-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.
+      </p>
+      <button class="btn-add-cart" aria-label="Add to Cart"><a href="shopping cart.html">Add To Cart</a></button>
+      <button class="btn-heart" aria-label="Add to wishlist">
+        <span class="material-icons" aria-hidden="true">favorite_border</span>
+      </button>
+
+      <p><strong>Categories:</strong> Furniture, Bags</p>
+      <p><strong>Tags:</strong> Chair, Modern, Handmade</p>
+      <p><strong>Share:</strong>
+        <a href="#" aria-label="Share on Facebook" style="color:#3b5998;"><span class="material-icons"
+            aria-hidden="true">facebook</span></a>
+        <a href="#" aria-label="Share on Twitter" style="color:#1DA1F2;"><span class="material-icons"
+            aria-hidden="true">twitter</span></a>
+        <a href="#" aria-label="Share on Pinterest" style="color:#bd081c;"><span class="material-icons"
+            aria-hidden="true">pinterest</span></a>
+      </p>
+    </article>
+  </main>
+
+  <section class="info-tabs" aria-label="Product additional information tabs">
+    <nav role="tablist" aria-label="Information Tabs">
+      <button role="tab" aria-selected="true" aria-controls="description" id="tab-desc" class="active"
+        tabindex="0">Description</button>
+      <button role="tab" aria-selected="false" aria-controls="info" id="tab-info" tabindex="-1">Additional Info</button>
+      <button role="tab" aria-selected="false" aria-controls="reviews" id="tab-reviews" tabindex="-1">Reviews</button>
+      <button role="tab" aria-selected="false" aria-controls="video" id="tab-video" tabindex="-1">Video</button>
+    </nav>
+    <section id="description" role="tabpanel" aria-labelledby="tab-desc" tabindex="0">
+      <strong>Varius tempor.</strong>
+      <p>Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor ornare faucibus vel sed et eleifend habitasse
+        amet. Montes, mauris varius ac est bibendum. Scelerisque a, risus ac ante. Velit consectetur neque, elit,
+        aliquet. Non varius proin sed urna, egestas consequat laoreet diam tincidunt. Magna eget faucibus cras justo,
+        tortor sed donec tempus. Imperdiet consequat, quis diam arcu, nulla lobortis justo netus dis. Eu in fringilla
+        vulputate nunc nec. Dui, massa viverr .</p>
+      <strong>More details</strong>
+      <ul>
+        <li>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu
+          in fringilla vulputate nunc nec. Dui, massa viverr .</li>
+        <li>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu
+          in fringilla vulputate nunc nec. Dui, massa viverr .</li>
+        <li>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu
+          in fringilla vulputate nunc nec. Dui, massa viverr .</li>
+        <li>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu
+          in fringilla vulputate nunc nec. Dui, massa viverr .</li>
+      </ul>
+    </section>
+    <section id="info" role="tabpanel" aria-labelledby="tab-info" hidden tabindex="0">
+      <p>Additional product information will be here.</p>
+    </section>
+    <section id="reviews" role="tabpanel" aria-labelledby="tab-reviews" hidden tabindex="0">
+      <p>Customer reviews information will be displayed here.</p>
+    </section>
+    <section id="video" role="tabpanel" aria-labelledby="tab-video" hidden tabindex="0">
+      <p>Product related videos will be shown here.</p>
+    </section>
+  </section>
+
+  <section class="related-products" aria-label="Related Products">
+    <div class="container">
+      <h3>Related Products</h3>
+      <div class="product-cards">
+        <article class="product-card" tabindex="0">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3b6fe7a7-97c5-4f71-94e8-e5c55ab144a5.png"
+            alt="Young man wearing mens fashion clothing" />
+          <div class="card-text">
+            <h4>Mens Fashion Wear</h4>
+            <p class="price">$43.00</p>
+            <div class="rating" aria-label="Rating 4 stars">
+              <span>★★★★☆</span>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d600cb94-1271-4be1-9c8a-8956cb362abf.png"
+            alt="Women posing in fashionable clothing" />
+          <div class="card-text">
+            <h4>Women's Fashion</h4>
+            <p class="price">$67.00</p>
+            <div class="rating" aria-label="Rating 5 stars">
+              <span>★★★★★</span>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/53f5acd5-c6da-47c1-ad8e-497ce1e50466.png"
+            alt="Woman modeling wolk dummy fashion" />
+          <div class="card-text">
+            <h4>Wolk Dummy Fashion</h4>
+            <p class="price">$67.00</p>
+            <div class="rating" aria-label="Rating 4 stars">
+              <span>★★★★☆</span>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/161a9373-735a-4d25-81cd-de2ee198a3ef.png"
+            alt="Modern digital wall clock hanging on wall" />
+          <div class="card-text">
+            <h4>Top Wall Digital Clock</h4>
+            <p class="price">$51.00</p>
+            <div class="rating" aria-label="Rating 3 stars">
+              <span>★★★☆☆</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-section" aria-label="Trusted Brands">
+    <div class="container"
+      style="display:flex;align-items:center;justify-content:space-around;max-width:1280px;margin:auto;">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/913a8221-22f5-40d8-abba-6ff3de25214f.png"
+        alt="Fashion Live brand logo in grayscale" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/47d95fd3-eaf9-4bf5-9f43-e95fa4bd3328.png"
+        alt="Hand Crafted brand logo in grayscale" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5c1d6f4c-474a-4be0-a94d-69d012ff0fee.png"
+        alt="Mestonix brand logo in grayscale" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/23a93fbc-6957-4ce1-8d5a-ce1c0653f592.png"
+        alt="Sunshine brand logo in grayscale" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/79acf97d-f0e1-4b24-9747-e97c51374266.png"
+        alt="Pure brand logo in grayscale" />
+    </div>
+  </section>
+
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+  <script src="js/product-details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hekto Shop List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/shop_list.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+  <!-- Topbar -->
+
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+    <a href="index.html">Home</a>
+    <span class="separator" aria-hidden="true">›</span>
+    <a href="grid default.html">Pages</a>
+    <span class="separator" aria-hidden="true">›</span>
+    <span class="current" aria-current="page">Shop List</span>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">Shop List</h1>
+
+    <!-- Filter bar -->
+    <section class="filterbar" aria-label="Shop filters and display options">
+      <span class="left-text" aria-live="polite" aria-atomic="true">Ecommerce Accesories &amp; Fashion item – About
+        9,620 results (0.62 seconds)</span>
+      <div class="right-controls">
+        <label for="per-page-select">Per Page:</label>
+        <input type="number" id="per-page-select" min="1" max="100" value="9" aria-label="Set items to show per page" />
+
+        <label for="sort-select">Sort By:</label>
+        <select id="sort-select" aria-label="Sort products by">
+          <option value="best-match" selected>Best Match</option>
+          <option value="price-low-high">Price: low to high</option>
+          <option value="price-high-low">Price: high to low</option>
+          <option value="newest">Newest</option>
+        </select>
+
+        <div class="view-toggle" aria-label="Toggle product list or grid view">
+          <button title="List View" class="active" aria-pressed="true" aria-label="List view selected" tabindex="0">
+            <span class="material-icons" aria-hidden="true">list</span>
+          </button>
+          <button title="Grid View" aria-pressed="false" aria-label="Grid view not selected" tabindex="0">
+            <span class="material-icons" aria-hidden="true">grid_view</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product list -->
+    <section class="shop-list" role="list" aria-label="Product listing">
+      <!-- Product card -->
+      <article class="product-card" role="listitem" tabindex="0" aria-labelledby="title-accumsan">
+        <div class="product-image">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fbb36be0-9692-463b-b7ae-8d6f0a513af7.png"
+            alt="Modern living room with sofa, coffee table and rug" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <h2 id="title-accumsan" class="product-title">Accumsan tincidunt</h2>
+          <div class="product-colors" aria-label="Available Colors">
+            <button class="color-dot orange" title="Orange"></button>
+            <button class="color-dot pink" title="Pink"></button>
+            <button class="color-dot purple" title="Purple"></button>
+          </div>
+          <div class="product-pricing" aria-label="Price $26 original price $52">
+            <span class="price-new" aria-hidden="true">$26.00</span>
+            <span class="price-old" aria-hidden="true">$52.00</span>
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span
+                aria-hidden="true">★</span><span aria-hidden="true">☆</span>
+            </div>
+          </div>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+          </p>
+          <div class="product-actions" aria-label="Product action buttons">
+            <button aria-label="Add to cart" title="Add to cart"><span
+                class="material-icons">shopping_cart</span></button>
+            <button aria-label="Add to wishlist" title="Add to wishlist"><span
+                class="material-icons">favorite_border</span></button>
+            <button aria-label="Search product details" title="Search product"><span
+                class="material-icons">search</span></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Repeat product cards with updated details and placeholder images -->
+      <article class="product-card" role="listitem" tabindex="0" aria-labelledby="title-in-nulla">
+        <div class="product-image">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/637a7e1d-b1fc-4685-93ae-d185724e8c6c.png"
+            alt="Minimal modern table lamp and couch" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <h2 id="title-in-nulla" class="product-title">In nulla</h2>
+          <div class="product-colors" aria-label="Available Colors">
+            <button class="color-dot orange" title="Orange"></button>
+            <button class="color-dot pink" title="Pink"></button>
+            <button class="color-dot purple" title="Purple"></button>
+          </div>
+          <div class="product-pricing" aria-label="Price $26 original price $52">
+            <span class="price-new">$26.00</span>
+            <span class="price-old">$52.00</span>
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span
+                aria-hidden="true">★</span><span aria-hidden="true">☆</span>
+            </div>
+          </div>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+          </p>
+          <div class="product-actions">
+            <button aria-label="Add to cart" title="Add to cart"><span
+                class="material-icons">shopping_cart</span></button>
+            <button aria-label="Add to wishlist" title="Add to wishlist"><span
+                class="material-icons">favorite_border</span></button>
+            <button aria-label="Search product details" title="Search product"><span
+                class="material-icons">search</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0" aria-labelledby="title-vel-sem">
+        <div class="product-image">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c0f9fde5-b68b-43e0-b35b-6799e54af4a6.png"
+            alt="Man sitting in modern office smiling" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <h2 id="title-vel-sem" class="product-title">Vel sem</h2>
+          <div class="product-colors" aria-label="Available Colors">
+            <button class="color-dot orange" title="Orange"></button>
+            <button class="color-dot pink" title="Pink"></button>
+            <button class="color-dot purple" title="Purple"></button>
+          </div>
+          <div class="product-pricing" aria-label="Price $26 original price $52">
+            <span class="price-new">$26.00</span>
+            <span class="price-old">$52.00</span>
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span
+                aria-hidden="true">★</span><span aria-hidden="true">☆</span>
+            </div>
+          </div>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+          </p>
+          <div class="product-actions">
+            <button aria-label="Add to cart" title="Add to cart"><span
+                class="material-icons">shopping_cart</span></button>
+            <button aria-label="Add to wishlist" title="Add to wishlist"><span
+                class="material-icons">favorite_border</span></button>
+            <button aria-label="Search product details" title="Search product"><span
+                class="material-icons">search</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0" aria-labelledby="title-porttitor-cum">
+        <div class="product-image">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a889f89c-4918-4f54-9f41-6b432b2813bc.png"
+            alt="Stylish leather furniture in modern room" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <h2 id="title-porttitor-cum" class="product-title">Porttitor cum</h2>
+          <div class="product-colors" aria-label="Available Colors">
+            <button class="color-dot orange" title="Orange"></button>
+            <button class="color-dot pink" title="Pink"></button>
+            <button class="color-dot purple" title="Purple"></button>
+          </div>
+          <div class="product-pricing" aria-label="Price $26 original price $52">
+            <span class="price-new">$26.00</span>
+            <span class="price-old">$52.00</span>
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span
+                aria-hidden="true">★</span><span aria-hidden="true">☆</span>
+            </div>
+          </div>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+          </p>
+          <div class="product-actions">
+            <button aria-label="Add to cart" title="Add to cart"><span
+                class="material-icons">shopping_cart</span></button>
+            <button aria-label="Add to wishlist" title="Add to wishlist"><span
+                class="material-icons">favorite_border</span></button>
+            <button aria-label="Search product details" title="Search product"><span
+                class="material-icons">search</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0" aria-labelledby="title-nunc-in">
+        <div class="product-image">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c1572890-0154-4a5c-a172-d3c4fa1637f1.png"
+            alt="Cozy brown sofa with cushion" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <h2 id="title-nunc-in" class="product-title">Nunc in</h2>
+          <div class="product-colors" aria-label="Available Colors">
+            <button class="color-dot orange" title="Orange"></button>
+            <button class="color-dot pink" title="Pink"></button>
+            <button class="color-dot purple" title="Purple"></button>
+          </div>
+          <div class="product-pricing" aria-label="Price $26 original price $52">
+            <span class="price-new">$26.00</span>
+            <span class="price-old">$52.00</span>
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span
+                aria-hidden="true">★</span><span aria-hidden="true">☆</span>
+            </div>
+          </div>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+          </p>
+          <div class="product-actions">
+            <button aria-label="Add to cart" title="Add to cart"><span
+                class="material-icons">shopping_cart</span></button>
+            <button aria-label="Add to wishlist" title="Add to wishlist"><span
+                class="material-icons">favorite_border</span></button>
+            <button aria-label="Search product details" title="Search product"><span
+                class="material-icons">search</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0" aria-labelledby="title-vitae-facilisi">
+        <div class="product-image">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/21fdcdca-753a-4e98-9f34-18067309bb3a.png"
+            alt="Comfortable cushioned chair closeup" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <h2 id="title-vitae-facilisi" class="product-title">Vitae facilisis</h2>
+          <div class="product-colors" aria-label="Available Colors">
+            <button class="color-dot orange" title="Orange"></button>
+            <button class="color-dot pink" title="Pink"></button>
+            <button class="color-dot purple" title="Purple"></button>
+          </div>
+          <div class="product-pricing" aria-label="Price $26 original price $52">
+            <span class="price-new">$26.00</span>
+            <span class="price-old">$52.00</span>
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span
+                aria-hidden="true">★</span><span aria-hidden="true">☆</span>
+            </div>
+          </div>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+          </p>
+          <div class="product-actions">
+            <button aria-label="Add to cart" title="Add to cart"><span
+                class="material-icons">shopping_cart</span></button>
+            <button aria-label="Add to wishlist" title="Add to wishlist"><span
+                class="material-icons">favorite_border</span></button>
+            <button aria-label="Search product details" title="Search product"><span
+                class="material-icons">search</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0" aria-labelledby="title-curabitur-lectus">
+        <div class="product-image">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/74c72023-1278-48f7-80d9-390164dbd16f.png"
+            alt="Gray cushioned chair with open laptop on it" loading="lazy" />
+        </div>
+        <div class="product-info">
+          <h2 id="title-curabitur-lectus" class="product-title">Curabitur lectus</h2>
+          <div class="product-colors" aria-label="Available Colors">
+            <button class="color-dot orange" title="Orange"></button>
+            <button class="color-dot pink" title="Pink"></button>
+            <button class="color-dot purple" title="Purple"></button>
+          </div>
+          <div class="product-pricing" aria-label="Price $26 original price $52">
+            <span class="price-new">$26.00</span>
+            <span class="price-old">$52.00</span>
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span
+                aria-hidden="true">★</span><span aria-hidden="true">☆</span>
+            </div>
+          </div>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.
+          </p>
+          <div class="product-actions">
+            <button aria-label="Add to cart" title="Add to cart"><span
+                class="material-icons">shopping_cart</span></button>
+            <button aria-label="Add to wishlist" title="Add to wishlist"><span
+                class="material-icons">favorite_border</span></button>
+            <button aria-label="Search product details" title="Search product"><span
+                class="material-icons">search</span></button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+</body>
+
+</html>

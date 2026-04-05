@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop Grid Default - Hekto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/grid_default.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+
+
+  <!-- Header Main -->
+
+
+  <!-- Mobile navigation menu -->
+  <div class="mobile-nav-overlay" tabindex="-1" aria-hidden="true"></div>
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile primary menu" hidden>
+    <a href="index.html">Home</a>
+    <a href="grid default.html">Pages</a>
+    <a href="shop list.html">Products</a>
+    <a href="Blog Page.html">Blog</a>
+    <a href="shop list.html">Shop</a>
+    <a href="CONTACT US.html">Contact</a>
+  </nav>
+
+  <!-- Breadcrumb Section -->
+  <section class="breadcrumb-section" aria-label="Breadcrumb">
+    <div class="container">
+      <h1>Shop Grid Default</h1>
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+        <a href="index.html">Home</a><span aria-hidden="true">.</span>
+        <a href="grid default.html">Pages</a><span aria-hidden="true">.</span>
+        <span aria-current="page" style="color:#ff4281;">Shop Grid Default</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container shop-content" id="maincontent" tabindex="-1">
+    <!-- Filters Row -->
+    <div class="filters-row" role="region" aria-label="Filters and sorting controls" aria-live="polite">
+      <div>
+        <label for="perPageSelect">Per Page:</label>
+        <input type="number" id="perPageSelect" aria-label="Items per page" min="1" max="100" value="12" />
+      </div>
+      <div>
+        <label for="sortSelect">Sort By:</label>
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="bestMatch" selected>Best Match</option>
+          <option value="priceLowToHigh">Price: Low to High</option>
+          <option value="priceHighToLow">Price: High to Low</option>
+          <option value="newest">Newest</option>
+          <option value="popularity">Popularity</option>
+        </select>
+      </div>
+      <div aria-label="View options">
+        <label>View:</label>
+        <button class="icon-btn active" aria-pressed="true" aria-label="Grid view">
+          <span class="material-icons" aria-hidden="true">grid_view</span>
+        </button>
+        <button class="icon-btn" aria-pressed="false" aria-label="List view">
+          <span class="material-icons" aria-hidden="true">list</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <section class="product-grid" aria-label="Product listings">
+
+      <!-- Product Card Example -->
+      <article class="product-card" tabindex="0" aria-label="Vel elit euismod product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9349aa9b-2309-42d8-a755-9e774eb4b100.png"
+            alt="Modern gray fabric chair with dark legs on light background" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Vel elit euismod</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product card: Highlighted with icons -->
+      <article class="product-card" tabindex="0" aria-label="Ultricies condimentum imperdiet product, featured">
+        <div class="product-image-wrapper highlighted">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/befe435a-5e8f-4eb1-bcd8-2230ad9c0dc4.png"
+            alt="Elegant pink armchair on pale teal background" loading="lazy" width="140" height="140" />
+          <div class="product-icons-left">
+            <button class="icon-btn" aria-label="Add Ultricies condimentum imperdiet to cart" title="Add to cart">
+              <span class="material-icons">add_shopping_cart</span>
+            </button>
+            <button class="icon-btn" aria-label="Compare Ultricies condimentum imperdiet" title="Compare product">
+              <span class="material-icons">compare_arrows</span>
+            </button>
+            <button class="icon-btn" aria-label="Add Ultricies condimentum imperdiet to wishlist"
+              title="Add to wishlist">
+              <span class="material-icons">favorite_border</span>
+            </button>
+          </div>
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Ultricies condimentum imperdiet</a>
+          <div class="product-colors" aria-label="Available colors: red, blue, orange, purple">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot blue" tabindex="0" role="button" aria-label="Select blue color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+            <span class="color-dot purple" tabindex="0" role="button" aria-label="Select purple color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Additional products, simplified for brevity -->
+      <article class="product-card" tabindex="0" aria-label="Vitae suspendisse sed product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2954c11c-086c-4d11-a789-2be49a39023d.png"
+            alt="Light gray modern chair with wooden legs" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Vitae suspendisse sed</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Sed at fermentum product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/50ca8703-99bc-456e-b1fa-75c5a07b9b45.png"
+            alt="Black modern backpack on light background" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Sed at fermentum</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Repeat similarly for other products - truncated for brevity -->
+      <article class="product-card" tabindex="0" aria-label="Fusce pellentesque at product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b3f6458-69f0-4f1b-a5e1-558e84940919.png"
+            alt="Modern smartwatch on white background" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Fusce pellentesque at</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Vestibulum magna laoreet product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6fc5c078-7dec-4056-9294-fb4769972d1f.png"
+            alt="Sleek black round watch with leather strap" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Vestibulum magna laoreet</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Sollicitudin amet orci product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/adce3d89-d0d0-4504-9175-9028dfa68160.png"
+            alt="Red over-ear headphones on white background" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Sollicitudin amet orci</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Ultrices mauris sit product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e24f604-392a-4e64-9fc4-76f789152422.png"
+            alt="Small pink armchair on white background" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Ultrices mauris sit</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Pellentesque condimentum ac product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/08b8d7a0-33c4-415a-860e-d405fdb0fe1f.png"
+            alt="Black smart band wristwatch with screen" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Pellentesque condimentum ac</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Cras scelerisque velit product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/659778a9-ccff-40f9-8929-328c060e9356.png"
+            alt="DSLR camera front view with lens in black" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Cras scelerisque velit</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Lectus vulputate faucibus product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de7d2102-3f82-4a90-a62b-30ec6e77e6a0.png"
+            alt="Purple wireless headphones on white background" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Lectus vulputate faucibus</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Purus risus, ut product">
+        <div class="product-image-wrapper">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/19237039-5470-4f75-b49f-269e7841e93b.png"
+            alt="Modern black backpack on white background" loading="lazy" width="140" height="140" />
+        </div>
+        <div class="product-content">
+          <a href="#" class="product-title" tabindex="-1">Purus risus, ut</a>
+          <div class="product-colors" aria-label="Available colors: red, orange">
+            <span class="color-dot red" tabindex="0" role="button" aria-label="Select red color"></span>
+            <span class="color-dot orange" tabindex="0" role="button" aria-label="Select orange color"></span>
+          </div>
+          <div class="price">
+            $26.00
+            <span class="old-price" aria-label="Old price">$42.00</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Partners logos -->
+    <section class="partners-section" aria-label="Our partners logos">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a83beff2-308a-4915-a72d-e23b96a49af6.png"
+        alt="Fashion LIVE brand logo in grayscale" width="100" height="24" loading="lazy" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2dc7f2a-1f68-4efe-9e00-0e61ba48837b.png"
+        alt="Hand Crafted brand logo in grayscale" width="100" height="24" loading="lazy" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/412c781f-9300-487b-8cad-498e35a10aa6.png"
+        alt="Mestonix brand logo" width="100" height="24" loading="lazy" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9c0929d2-7236-42b9-b0a4-ed5148d8e87c.png"
+        alt="Sunshine brand logo in grayscale" width="100" height="24" loading="lazy" />
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/967d4b5f-e1e0-42ca-b44d-0c52e071de59.png"
+        alt="Purec brand logo in grayscale" width="100" height="24" loading="lazy" />
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+</body>
+
+</html>

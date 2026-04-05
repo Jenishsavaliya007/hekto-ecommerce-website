@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Single Blog - Hekto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/single_blog.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+
+  <section class="breadcrumb-section" aria-label="Page heading and breadcrumbs">
+    <div class="container">
+      <h1 class="breadcrumb-title">Single Blog</h1>
+      <nav class="breadcrumb-path" aria-label="breadcrumb">
+        <a href="#">Home .</a>
+        <a href="#">Pages .</a>
+        <span>Single Blog</span>
+      </nav>
+    </div>
+  </section>
+
+  <main>
+    <div class="main-container">
+      <article class="blog-post" tabindex="0" aria-label="Blog Post">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7380ed4-db65-4a6e-b644-aa47222f616f.png"
+          alt="Young woman wearing glasses working with a laptop and smartphone" draggable="false" loading="lazy" />
+        <div class="post-meta" aria-label="Post meta information">
+          <div class="tag" tabindex="0">Surf Action</div>
+          <div class="date" tabindex="0">Aug 07 2023</div>
+        </div>
+        <h2 class="post-title" tabindex="0">
+          Mauris at orci non vulputate diam tincidunt nec.
+        </h2>
+        <div class="post-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu
+            malesuada vitae ultricies in in neque, porta dignissim. Adipiscing
+            purus, cursus vulputate id id dictum ac.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat
+            integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea
+            donec vitae ante posuere malesuada. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Velit dapibus est, nunc,
+            montes, lacus consequat integer viverra. Sit morbi etiam quam
+            rhoncus.
+          </p>
+          <blockquote tabindex="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+            dictum sapien, amet, consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Commodo dictum sapien, amet,
+            consequat lorem risus.
+          </blockquote>
+          <div class="featured-images" aria-label="Featured images with a video play button on first image">
+            <div>
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f31cf8dd-a0bb-47a9-b676-c5a91b6817ac.png"
+                alt="Woman enjoying outdoor scene with a hat looking at water" draggable="false" loading="lazy" />
+            </div>
+            <div>
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/77452d5e-5dc6-4d74-9f3c-a9a441daa4ea.png"
+                alt="Young woman posing in a scenic outdoor location" draggable="false" loading="lazy" />
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat
+            integer viverra. Sit morbi etiam quam rhoncus.
+          </p>
+
+          <div class="product-grid" role="list" aria-label="Related products preview">
+            <div class="product-item" role="listitem" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e69ff742-9e76-4f53-a3e3-e5c5e6d12b6b.png"
+                alt="Vintage style brown chair" loading="lazy" draggable="false" />
+              <div class="product-name" title="Quam sed">Quam sed</div>
+              <div class="product-prices">
+                <span>$30.00</span>
+                <del>$56.00</del>
+              </div>
+            </div>
+            <div class="product-item" role="listitem" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/305bca2f-554d-44d8-a914-06c851239639.png"
+                alt="Stacked white ceramic bowls" loading="lazy" draggable="false" />
+              <div class="product-name" title="Tristique sed">Tristique sed</div>
+              <div class="product-prices">
+                <span>$32.00</span>
+                <del>$56.00</del>
+              </div>
+            </div>
+            <div class="product-item" role="listitem" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/108098d6-e708-4000-a113-410a1235d74e.png"
+                alt="Light blue casual t-shirt" loading="lazy" draggable="false" />
+              <div class="product-name" title="A etiam">A etiam</div>
+              <div class="product-prices">
+                <span>$32.00</span>
+                <del>$56.00</del>
+              </div>
+            </div>
+            <div class="product-item" role="listitem" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6cdf216a-db4b-4663-94a9-399762528b33.png"
+                alt="Minimalist white modern chair" loading="lazy" draggable="false" />
+              <div class="product-name" title="Mi nisi">Mi nisi</div>
+              <div class="product-prices">
+                <span>$30.00</span>
+                <del>$56.00</del>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
+            dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+            morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante
+            posuere malesuada.
+          </p>
+
+          <div class="social-follow" aria-label="Social media follow links">
+            <a href="#" aria-label="Facebook" tabindex="0"><span class="material-icons">facebook</span></a>
+            <a href="#" aria-label="Instagram" tabindex="0"><span class="material-icons">instagram</span></a>
+            <a href="#" aria-label="Twitter" tabindex="0"><span class="material-icons">twitter</span></a>
+          </div>
+
+          <nav class="post-navigation" role="navigation" aria-label="Post navigation">
+            <a href="#" class="previous-post" tabindex="0"><span aria-hidden="true"
+                class="material-icons">arrow_back</span> Previous Post</a>
+            <a href="#" class="next-post" tabindex="0">Next Post <span aria-hidden="true"
+                class="material-icons">arrow_forward</span></a>
+          </nav>
+
+          <section class="comments-section" aria-label="Comments Section">
+            <article class="comment" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/85f86465-160e-4df6-aec5-1f9221e67bd0.png"
+                alt="User avatar of Shaun" draggable="false" loading="lazy" />
+              <div class="comment-body">
+                <div class="comment-name">Shaun</div>
+                <div class="comment-meta">Aug 05, 2020</div>
+                <div class="comment-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
+                  vehicula et urna vulputate consectetur.
+                </div>
+              </div>
+            </article>
+
+            <article class="comment" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/85c6b4fe-bcd3-4150-99f0-a0a353029a9c.png"
+                alt="User avatar of Aimee" draggable="false" loading="lazy" />
+              <div class="comment-body">
+                <div class="comment-name">Aimee</div>
+                <div class="comment-meta">Aug 11, 2020</div>
+                <div class="comment-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
+                  vehicula et urna vulputate consectetur.
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <form class="comment-form" aria-label="Leave a comment form" novalidate method="POST" action="#">
+            <h3>Leave a Comment</h3>
+            <div class="form-group">
+              <label for="name">Your Name*</label>
+              <input type="text" id="name" name="name" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="email">Write Your Email*</label>
+              <input type="email" id="email" name="email" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="comment">Write your comment*</label>
+              <textarea id="comment" name="comment" required aria-required="true"></textarea>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="save-info" name="save-info" />
+              <label for="save-info">Save my name, email, and website in this browser for the next time I
+                comment.</label>
+            </div>
+            <button type="submit" class="submit-btn">Continue Shipping</button>
+          </form>
+      </article>
+
+      <aside class="sidebar" aria-label="Sidebar content with search, categories and products">
+        <section class="widget-box search-widget" aria-label="Search Blog Posts">
+          <label for="search-posts">Search</label>
+          <input id="search-posts" name="search-posts" type="search" placeholder="Search For Posts"
+            aria-required="false" />
+        </section>
+
+        <section class="widget-box categories-widget" aria-label="Blog categories">
+          <h4>Categories</h4>
+          <div class="categories-list" role="list" aria-label="Blog Categories list">
+            <a href="#" role="listitem" tabindex="0">Holidae <span>14</span></a>
+            <a href="#" role="listitem" tabindex="0">Women</a>
+            <a href="#" role="listitem" tabindex="0">Women</a>
+            <a href="#" role="listitem" tabindex="0">Women</a>
+            <a href="#" role="listitem" tabindex="0">Women</a>
+          </div>
+        </section>
+
+        <section class="widget-box recent-posts-widget" aria-label="Recent blog posts">
+          <h4>Recent Post</h4>
+          <div class="recent-posts-list">
+            <a href="#" class="recent-post" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/22410d3b-48cf-46f9-9d9e-48650a70b009.png"
+                alt="Recent blog post thumbnail image 1" draggable="false" loading="lazy" />
+              <p>It is a long established fact Aug 06 2020</p>
+            </a>
+            <a href="#" class="recent-post" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d795636b-1aee-4054-950e-2a150fad9f56.png"
+                alt="Recent blog post thumbnail image 2" draggable="false" loading="lazy" />
+              <p>It is a long established fact Aug 06 2020</p>
+            </a>
+            <a href="#" class="recent-post" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4dbebf9e-9b29-4e2e-850e-8265658e0750.png"
+                alt="Recent blog post thumbnail image 3" draggable="false" loading="lazy" />
+              <p>It is a long established fact Aug 06 2020</p>
+            </a>
+            <a href="#" class="recent-post" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7f0a7b57-2bb2-4f86-9e55-4e4871a80943.png"
+                alt="Recent blog post thumbnail image 4" draggable="false" loading="lazy" />
+              <p>It is a long established fact Aug 06 2020</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="widget-box sale-product-widget" aria-label="Sale products">
+          <h4>Sale Product</h4>
+          <div class="sale-product-list">
+            <div class="sale-product" tabindex="0">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52c84962-6db4-4725-ade0-161173b4023c.png"
+                alt="Sale product 1" draggable="false" loading="lazy" />
+              <div>
+                <p>Elit omnis amet, in enim rerum</p></div></div></div></section></aside></div></main>
+<footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
+<script src="js/product-nav.js"></script>
+</body>
+</html>

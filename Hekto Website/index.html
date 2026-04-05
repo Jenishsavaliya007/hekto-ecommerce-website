@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hekto - Furniture Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="New Furniture Collection Promotion">
+        <div class="hero-text">
+            <p style="font-weight: 600; font-size: 0.9rem; color: #d81880; margin-bottom: 12px;">Get Exclusive For
+                Each...</p>
+            <h1>New Furniture Collection <br />Trends in 2020</h1>
+            <p>Explore the best modern furniture & decorate your living space with Hekto’s exclusive designs.</p>
+            <button class="btn-primary" aria-label="Shop Now for New Furniture Collection"><a
+                    href="grid default.html">Shop Now</a></button>
+            <div class="carousel-dots" aria-hidden="true">
+                <span class="carousel-dot active"></span>
+                <span class="carousel-dot"></span>
+                <span class="carousel-dot"></span>
+            </div>
+        </div>
+        <div class="hero-image-wrapper" aria-hidden="true">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/46b698f2-fe30-4f7e-a96e-598a7d0aa043.png"
+                alt="Soft pink modern armchair with golden legs on pastel background" />
+            <div class="sale-badge" aria-label="50 percent off">50% off</div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured-products" aria-label="Featured Products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="featured-products container">
+            <article class="product-card" tabindex="0" aria-label="White modern chair for dining priced at $120">
+                <div class="product-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c78fd512-6826-4560-b6f1-dc58152b2831.png"
+                        alt="White modern dining chair facing front" />
+                </div>
+                <div class="product-category">Living Room</div>
+                <h3 class="product-title">White Modern Chair</h3>
+                <div class="product-price">$120</div>
+            </article>
+            <article class="product-card" tabindex="0"
+                aria-label="Light wood accent chair with blue cushion priced at $150">
+                <div class="product-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c339ff26-249c-41ca-90ec-0c20085f97e0.png"
+                        alt="Wooden accent chair with blue cushion" />
+                </div>
+                <div class="product-category">Accent Chair</div>
+                <h3 class="product-title">Accent Chair</h3>
+                <div class="product-price">$150</div>
+                <div class="product-badge" aria-label="Special Offer">Top Sales</div>
+            </article>
+            <article class="product-card" tabindex="0" aria-label="Light wood chair with white fabric priced at $100">
+                <div class="product-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/37d0bc4a-b609-4348-968b-98affd3c8241.png"
+                        alt="Light wood chair with white seat cushion" />
+                </div>
+                <div class="product-category">Dining Chair</div>
+                <h3 class="product-title">Dining Chair</h3>
+                <div class="product-price">$100</div>
+            </article>
+            <article class="product-card" tabindex="0" aria-label="Beige lounge chair priced at $250">
+                <div class="product-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9167ecdf-cdd0-48cf-8bda-94b90f59acc8.png"
+                        alt="Beige modern lounge chair" />
+                </div>
+                <div class="product-category">Lounge</div>
+                <h3 class="product-title">Lounge Chair</h3>
+                <div class="product-price">$250</div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Latest Products -->
+    <section id="latest-products" aria-label="Latest Products">
+        <h2 class="section-title">Latest Products</h2>
+        <div class="tabs" role="tablist" aria-label="Latest product categories">
+            <button class="tab active" role="tab" aria-selected="true" aria-controls="tab-new-arrival" id="tabnew"
+                tabindex="0">New Arrival</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="tab-best-seller" id="tabbest"
+                tabindex="-1">Best Seller</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="tab-featured" id="tabfeatured"
+                tabindex="-1">Featured</button>
+            <button class="tab" role="tab" aria-selected="false" aria-controls="tab-special-offer" id="tabspecial"
+                tabindex="-1">Special Offer</button>
+        </div>
+        <div class="latest-products container">
+            <div id="tab-new-arrival" role="tabpanel" aria-labelledby="tabnew">
+                <div class="latest-products-grid">
+                    <article class="latest-product-card" tabindex="0"
+                        aria-label="Brown rounded accent chair priced $220">
+                        <div class="latest-product-image">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3eb5ef2f-8c25-44cd-8ee8-29de00fe4985.png"
+                                alt="Brown rounded accent chair" />
+                        </div>
+                        <div class="latest-product-category">Accent Chair</div>
+                        <h4 class="latest-product-title">Rounded Accent Chair</h4>
+                        <div class="latest-product-price">$220</div>
+                    </article>
+                    <article class="latest-product-card" tabindex="0" aria-label="Yellow minimal chair priced $135">
+                        <div class="latest-product-image">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bfdf6204-bfac-40db-ac23-a11b55c12f1e.png"
+                                alt="Yellow minimal chair" />
+                        </div>
+                        <div class="latest-product-category">Dining Chair</div>
+                        <h4 class="latest-product-title">Minimal Yellow Chair</h4>
+                        <div class="latest-product-price">$135</div>
+                    </article>
+                    <article class="latest-product-card" tabindex="0" aria-label="White modern chair priced $120">
+                        <div class="latest-product-image">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4234342f-c0f1-4885-be89-5e512c7c8284.png"
+                                alt="White modern chair" />
+                        </div>
+                        <div class="latest-product-category">Living Room</div>
+                        <h4 class="latest-product-title">White Modern Chair</h4>
+                        <div class="latest-product-price">$120</div>
+                    </article>
+                    <article class="latest-product-card" tabindex="0" aria-label="Gray comfy chair priced $270">
+                        <div class="latest-product-image">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2adc95a8-4c68-43d5-aa08-0d75be9393f5.png"
+                                alt="Gray comfy chair with cushion" />
+                        </div>
+                        <div class="latest-product-category">Comfy Chair</div>
+                        <h4 class="latest-product-title">Comfy Chair</h4>
+                        <div class="latest-product-price">$270</div>
+                    </article>
+                    <article class="latest-product-card" tabindex="0" aria-label="Black curved chair priced $190">
+                        <div class="latest-product-image">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b6b0db8f-9c60-4c6a-9005-7e16efef57f8.png"
+                                alt="Black curved stylish chair" />
+                        </div>
+                        <div class="latest-product-category">Accent Chair</div>
+                        <h4 class="latest-product-title">Curved Stylish Chair</h4>
+                        <div class="latest-product-price">$190</div>
+                    </article>
+                    <article class="latest-product-card" tabindex="0" aria-label="Beige lounge chair priced $250">
+                        <div class="latest-product-image">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ddcd110e-4848-4aef-a976-dbe6d0f6a06c.png"
+                                alt="Beige modern lounge chair" />
+                        </div>
+                        <div class="latest-product-category">Lounge</div>
+                        <h4 class="latest-product-title">Lounge Chair</h4>
+                        <div class="latest-product-price">$250</div>
+                    </article>
+                </div>
+            </div>
+            <div id="tab-best-seller" role="tabpanel" aria-hidden="true" aria-labelledby="tabbest" hidden>
+                <!-- Placeholder content for Best Seller tab -->
+                <p style="text-align:center; color:#55536b; padding: 32px;">Best Seller products coming soon...</p>
+            </div>
+            <div id="tab-featured" role="tabpanel" aria-hidden="true" aria-labelledby="tabfeatured" hidden>
+                <!-- Placeholder content for Featured tab -->
+                <p style="text-align:center; color:#55536b; padding: 32px;">Featured products coming soon...</p>
+            </div>
+            <div id="tab-special-offer" role="tabpanel" aria-hidden="true" aria-labelledby="tabspecial" hidden>
+                <!-- Placeholder content for Special Offer tab -->
+                <p style="text-align:center; color:#55536b; padding: 32px;">Special offers coming soon...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Offers -->
+    <section class="offer-section" aria-label="Shopex Offers">
+        <h2 class="section-title">What Shopex Offer!</h2>
+        <div class="offer-cards container">
+            <div class="offer-card" tabindex="0" aria-label="24/7 Support offer">
+                <span class="material-icons offer-icon" aria-hidden="true">support_agent</span>
+                <h4 class="offer-title">24/7 Support</h4>
+                <p class="offer-desc">We support online 24 hours a day to give you the best service.</p>
+            </div>
+            <div class="offer-card" tabindex="0" aria-label="Free Delivery offer">
+                <span class="material-icons offer-icon" aria-hidden="true">local_shipping</span>
+                <h4 class="offer-title">Free Delivery</h4>
+                <p class="offer-desc">Get free shipping on all orders over $50 with fast delivery service.</p>
+            </div>
+            <div class="offer-card" tabindex="0" aria-label="15 Days Return offer">
+                <span class="material-icons offer-icon" aria-hidden="true">autorenew</span>
+                <h4 class="offer-title">15 Days Return</h4>
+                <p class="offer-desc">Return the product within 15 days if you are not satisfied with your purchase.</p>
+            </div>
+            <div class="offer-card" tabindex="0" aria-label="Secure Payment offer">
+                <span class="material-icons offer-icon" aria-hidden="true">payment</span>
+                <h4 class="offer-title">Secure Payment</h4>
+                <p class="offer-desc">We offer safe and secure payment options for all transactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Features -->
+    <section class="unique-feature" aria-label="Unique Features of latest and trending products">
+        <div class="unique-feature-image" aria-hidden="true">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ebe434db-6531-44e0-9588-6c453daf36ab.png"
+                alt="Modern luxury blue sofa with wooden legs" />
+        </div>
+        <div class="unique-feature-text">
+            <h3>Unique Features Of latest & Trending Products</h3>
+            <ul>
+                <li>All frames constructed with hardwood for lasting durability.</li>
+                <li>Reinforced with double wood dowels, glue, and nails for extra strength.</li>
+                <li>Built with sectional powder coat finish providing a smooth touch.</li>
+            </ul>
+            <button class="btn-primary" aria-label="Shop Unique Features"><a href="shop left sidebar.html">Shop
+                    Now</a></button>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section id="trending-products" aria-label="Trending Products">
+        <h2 class="section-title">Trending Products</h2>
+        <div class="trending-products container">
+            <div class="trending-grid">
+                <article class="trending-card" tabindex="0" aria-label="Soft pink modern chair priced $125">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e3c50d8-90a3-418e-b0d8-9e2b9aa5624f.png"
+                        alt="Soft pink chair with metal legs" />
+                    <div class="product-title">Soft Pink Chair</div>
+                    <div class="product-price">$125</div>
+                </article>
+                <article class="trending-card" tabindex="0" aria-label="Red accent chair priced $140">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1220a50b-25ff-43d7-aed8-020aa3000d85.png"
+                        alt="Red accent chair with wooden legs" />
+                    <div class="product-title">Red Accent Chair</div>
+                    <div class="product-price">$140</div>
+                </article>
+                <article class="trending-card" tabindex="0" aria-label="White modern chair priced $120">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cf541985-59ec-486a-8ada-06d271486602.png"
+                        alt="White modern chair" />
+                    <div class="product-title">White Modern Chair</div>
+                    <div class="product-price">$120</div>
+                </article>
+                <article class="trending-card" tabindex="0" aria-label="Black luxury chair priced $190">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/697ce04b-6a7e-4b43-acdd-a1982ce0aee7.png"
+                        alt="Black luxury chair" />
+                    <div class="product-title">Black Luxury Chair</div>
+                    <div class="product-price">$190</div>
+                </article>
+            </div>
+            <div class="discounts-section container" aria-label="Discounts on products">
+                <div class="discount-banner" tabindex="0" aria-label="23 percent off on all products">
+                    <h4>23% off in all products</h4>
+                    <small>Shop Now</small>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8625a06d-1c49-4312-bae8-e6f0dbe7218e.png"
+                        alt="Black luxury wristwatch product" />
+                </div>
+                <div class="discount-banner" tabindex="0" aria-label="23 percent off on selected furniture">
+                    <h4>23% off in all products</h4>
+                    <small>Up to 10 items</small>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/64280c8f-8bb5-4536-bcbf-39516d9d5166.png"
+                        alt="Modern blue furniture set" />
+                </div>
+                <div>
+                    <ul style="list-style:none; color:#7c3aed; font-weight:700; font-size:0.9rem; padding-left:0;">
+                        <li>Modern Sofa & Chair</li>
+                        <li>Accent Chair</li>
+                        <li>Office Chair</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discount Item -->
+    <section id="discount-section" aria-label="Discount Item Featured">
+        <h2 class="section-title">Discount Item</h2>
+        <div class="discounts-section container"
+            style="grid-template-columns: 1fr 1fr; margin-bottom: 80px; gap: 48px;">
+            <div class="discount-details" tabindex="0" aria-label="20 percent discount on all products sale info">
+                <h3>20% Discount Of All Products</h3>
+                <p>Save your money with big discount sales on selected items. Upgrade your living room and give a lovely
+                    impression with our special offer.</p>
+                <ul>
+                    <li>All frames constructed with hardwood.</li>
+                    <li>Use extra 2 included pillows.</li>
+                    <li>Available in all modern colors.</li>
+                </ul>
+                <button class="btn-primary" aria-label="Shop Discount Items"><a href="product details.html">Shop
+                        Now</a></button>
+            </div>
+            <div class="discount-image" aria-hidden="true">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/09a73406-61c1-478c-9a1a-69383d161e5f.png"
+                    alt="Modern brown and grey lounge chair" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Categories -->
+    <section id="top-categories" aria-label="Top Categories">
+        <h2 class="section-title">Top Categories</h2>
+        <div class="category-list container">
+            <div class="category-item" tabindex="0" aria-label="Modern gray chair category">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/39550b07-355b-43ef-b5a8-f1a280670001.png"
+                    alt="Modern gray chair" />
+                <div class="category-name">Modern Chair</div>
+                <div class="category-subtitle">243 Items</div>
+            </div>
+            <div class="category-item" tabindex="0" aria-label="White living room chair category">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/27e9ffcc-c697-4944-a502-356c092f18d8.png"
+                    alt="White living room chair" />
+                <div class="category-name">Living Room Chair</div>
+                <div class="category-subtitle">122 Items</div>
+            </div>
+            <div class="category-item" tabindex="0" aria-label="Pink modern chair category">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c8db6a22-166b-42b3-a5b8-dacce1228e21.png"
+                    alt="Pink modern chair" />
+                <div class="category-name">Pink Chair</div>
+                <div class="category-subtitle">78 Items</div>
+            </div>
+            <div class="category-item" tabindex="0" aria-label="Classic gray chair category">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a305785-f556-47bc-a8cb-1cc0ab7d13a1.png"
+                    alt="Classic gray chair" />
+                <div class="category-name">Classic Chair</div>
+                <div class="category-subtitle">50 Items</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" aria-label="Newsletter subscription">
+        <h3>Get Latest Updates By Subscribe Our Newsletter</h3>
+        <button aria-label="Subscribe to newsletter">Subscribe Now</button>
+    </section>
+
+    <!-- Latest Blog -->
+    <section class="latest-blog" aria-label="Latest Blog Posts">
+        <h2>Latest Blog</h2>
+        <div class="blog-cards container">
+            <article class="blog-card" tabindex="0" aria-label="Blog post about Modern trends in 2020">
+                <div class="blog-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3443ab7c-1a84-489f-b770-3103106f2cef.png"
+                        alt="Modern living room with stylish furniture" />
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Nov 11, 2020</div>
+                    <h3 class="blog-title">Modern trends in 2020</h3>
+                    <p class="blog-excerpt">Explore the latest furniture collection and styling tips to make your home
+                        trendy and cozy.</p>
+                </div>
+            </article>
+            <article class="blog-card" tabindex="0" aria-label="Blog post about Top modern trends in 2020">
+                <div class="blog-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b10a82b2-8ef0-4d77-b2d6-0fc104bed280.png"
+                        alt="Modern dining room with elegant chairs and table" />
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Oct 25, 2020</div>
+                    <h3 class="blog-title">Top modern trends in 2020</h3>
+                    <p class="blog-excerpt">Discover the furniture styles trending this year for all rooms including
+                        living and dining areas.</p>
+                </div>
+            </article>
+            <article class="blog-card" tabindex="0" aria-label="Blog post about New seasonal trends in 2020">
+                <div class="blog-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6c6c7f57-0a04-4459-a4b7-c6e2b354c22f.png"
+                        alt="Cozy modern bedroom with minimalistic design" />
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Sep 12, 2020</div>
+                    <h3 class="blog-title">New seasonal trends in 2020</h3>
+                    <p class="blog-excerpt">Get inspired by cozy and minimalist furniture ideas for your bedroom and
+                        home.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/product-nav.js"></script>
+</body>
+
+</html>

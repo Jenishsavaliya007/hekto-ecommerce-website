@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hekto - About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/about_us.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+
+  <!-- Top Bar -->
+  <div class="top-bar" role="region" aria-label="Top Contact and utility information">
+    <div class="top-bar-left">
+      <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+        <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+      </a>
+      <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+        <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+      </a>
+    </div>
+    <div class="top-bar-right">
+      <div>
+        <label for="language-select" class="sr-only">Select Language</label>
+        <select id="language-select" aria-label="Select Language">
+          <option>English</option>
+          <option>Spanish</option>
+          <option>French</option>
+        </select>
+      </div>
+      <div>
+        <label for="currency-select" class="sr-only">Select Currency</label>
+        <select id="currency-select" aria-label="Select Currency">
+          <option>USD</option>
+          <option>EUR</option>
+          <option>GBP</option>
+        </select>
+      </div>
+      <a href="my account.html" aria-label="User Login">
+        <span class="material-icons" aria-hidden="true">login</span> Login
+      </a>
+      <a href="#" aria-label="View Wishlist">
+        <span class="material-icons" aria-hidden="true">favorite_border</span> Wishlist
+      </a>
+      <a href="shopping cart.html" aria-label="View Shopping Cart">
+        <span class="material-icons" aria-hidden="true">shopping_cart</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+
+
+  <!-- Breadcrumb Section -->
+  <section class="breadcrumb-section" aria-label="Breadcrumb navigation">
+    <div class="breadcrumb-container">
+      <h1 class="breadcrumb-title">About Us</h1>
+      <p class="breadcrumb-path">
+        Home . Pages . <a href="#" aria-current="page">About Us</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content" aria-labelledby="about-us-title">
+    <div class="about-image-wrapper">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/476efde5-2c39-4e39-aa5f-bd5a99a48b8f.png"
+        alt="Two business men discussing next e-commerce strategy in office" class="about-image" width="600"
+        height="400" loading="lazy" />
+    </div>
+    <article class="about-text">
+      <h2 id="about-us-title">Know About Our Ecommerce Business, History</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis
+        aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis.
+        Accumsan faucibus vitae lobortis quis bibendum quam.
+      </p>
+      <a href="CONTACT US.html" class="btn-primary" role="button">Contact us</a>
+    </article>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" aria-label="Our Features">
+    <h3>Our Features</h3>
+    <div class="features-grid">
+      <div class="feature-card" tabindex="0" role="group" aria-labelledby="feature1-title"
+        aria-describedby="feature1-desc">
+        <span class="feature-icon material-icons" aria-hidden="true">local_shipping</span>
+        <h4 id="feature1-title">Free Delivery</h4>
+        <p id="feature1-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+      </div>
+      <div class="feature-card active" tabindex="0" role="group" aria-labelledby="feature2-title"
+        aria-describedby="feature2-desc">
+        <span class="feature-icon material-icons" aria-hidden="true">monetization_on</span>
+        <h4 id="feature2-title">100% Cash Back</h4>
+        <p id="feature2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+      </div>
+      <div class="feature-card" tabindex="0" role="group" aria-labelledby="feature3-title"
+        aria-describedby="feature3-desc">
+        <span class="feature-icon material-icons" aria-hidden="true">verified</span>
+        <h4 id="feature3-title">Quality Product</h4>
+        <p id="feature3-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+      </div>
+      <div class="feature-card" tabindex="0" role="group" aria-labelledby="feature4-title"
+        aria-describedby="feature4-desc">
+        <span class="feature-icon material-icons" aria-hidden="true">support_agent</span>
+        <h4 id="feature4-title">24/7 Support</h4>
+        <p id="feature4-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" aria-label="Client Testimonials">
+    <h3>Our Client Say!</h3>
+    <div class="testimonial-avatars" role="list" aria-label="Client testimonials profiles">
+      <img tabindex="0" role="listitem" class="testimonial-avatar"
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6d85ae82-b515-43c4-8d9a-a04980447117.png"
+        alt="Portrait of client Selina Gomez" />
+      <img tabindex="0" role="listitem" class="testimonial-avatar"
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/10ae1fac-0d12-4e50-b016-bc1f4658364e.png"
+        alt="Portrait of client John Doe" />
+      <img tabindex="0" role="listitem" class="testimonial-avatar"
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0bb220d-61ac-4e83-8466-78bd022570ac.png"
+        alt="Portrait of client Anna Smith" />
+    </div>
+    <div class="client-name" tabindex="0">Selina Gomez</div>
+    <div class="client-role" tabindex="0">CEO at Webecy Digital</div>
+    <p class="testimonial-text" tabindex="0">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non duis ultrices quam vel dui
+      sollicitudin aliquet id arcu. Nam vitae a enim nunc, sed sapien egestas ac nam. Tristique
+      ultrices dolor aliquam lacus volutpat praesent.
+    </p>
+    <div class="testimonial-nav-dots" aria-hidden="true">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+</body>
+
+</html>

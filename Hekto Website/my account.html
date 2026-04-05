@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hekto - My Account Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/my_account.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+<nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+  <!-- Header top bar with contact & utilities -->
+  <div class="top-bar" role="region" aria-label="Contact and utilities">
+    <div class="left">
+      <span class="material-icons" aria-hidden="true">email</span>
+      <a href="mailto:mhhasanul@gmail.com" style="color:inherit">mhhasanul@gmail.com</a>
+      <span class="material-icons" aria-hidden="true">phone</span>
+      <a href="tel:+1234567890" style="color:inherit">(12345)67890</a>
+    </div>
+    <div class="right">
+      <label for="lang-select" class="sr-only">Select Language</label>
+      <select id="lang-select" aria-label="Select Language" name="language" title="Select language">
+        <option value="en" selected>English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+      </select>
+
+      <label for="currency-select" class="sr-only">Select Currency</label>
+      <select id="currency-select" aria-label="Select Currency" name="currency" title="Select currency">
+        <option value="usd" selected>USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
+
+      <a href="my account.html" aria-label="Login" title="Login"
+        style="display:flex; align-items:center; gap:4px; color:inherit">
+        <span class="material-icons" aria-hidden="true" style="font-size:18px;">login</span>Login
+      </a>
+      <a href="#" aria-label="Wishlist" title="Wishlist"
+        style="display:flex; align-items:center; gap:4px; color:inherit">
+        <span class="material-icons" aria-hidden="true" style="font-size:18px;">favorite_border</span>Wishlist
+      </a>
+      <a href="shopping cart.html" aria-label="Shopping Cart" title="Shopping Cart" style="color:inherit">
+        <span class="material-icons" aria-hidden="true" style="font-size:20px;">shopping_cart</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main navigation -->
+
+
+  <!-- Page hero title + breadcrumb -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container">
+      <h1 id="page-title">My Account</h1>
+      <nav aria-label="Breadcrumb">
+        <p class="breadcrumb">
+          Home &middot; Pages &middot; <a href="my account.html">My Account</a>
+        </p>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main content - login form -->
+  <main>
+    <section class="login-card" aria-labelledby="login-title">
+      <h2 id="login-title">Login</h2>
+      <p class="subtext">Please login using account detail bellow.</p>
+      <form action="#" method="POST" autocomplete="off" novalidate>
+        <input aria-required="true" type="email" name="email" id="email" placeholder="Email Address"
+          autocomplete="email" required />
+        <input aria-required="true" type="password" name="password" id="password" placeholder="Password"
+          autocomplete="current-password" required />
+        <a href="#" class="forgot-password" tabindex="0">Forgot your password?</a>
+        <button type="submit" class="signin">Sign In</button>
+      </form>
+      <p class="register-text">
+        Don’t have an Account?
+        <a href="#">Create account</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Brand logos -->
+  <section class="brand-logos" aria-label="Brand logos">
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3323aaac-6402-468f-bfd3-9a1ad7715de3.png"
+      alt="Fashion LIVE brand logo grayscale" width="120" height="32" loading="lazy" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7bd8c99b-54e0-4c20-b605-9d2fb5a6dfee.png"
+      alt="Hand Crafted brand logo grayscale" width="90" height="32" loading="lazy" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3cf0b6bc-d452-4949-91bf-9c02b0693b3f.png"
+      alt="Mestonix brand logo grayscale" width="100" height="32" loading="lazy" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/37703cc6-2e87-4c3a-91ab-54f2b8de98b4.png"
+      alt="Hello Sunshine brand logo grayscale" width="140" height="32" loading="lazy" />
+    <img
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3348dcbf-00c5-4f5f-a4f9-618515499fc2.png"
+      alt="Pure brand logo grayscale" width="90" height="32" loading="lazy" />
+  </section>
+
+  <!-- Footer -->
+
+
+  <style>
+    /* Screen reader only label for accessibility */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+</body>
+
+</html>

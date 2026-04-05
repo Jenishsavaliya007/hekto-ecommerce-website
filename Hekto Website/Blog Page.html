@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hekto - Blog Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/blog_page.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+  <!-- HEADER -->
+
+
+  <!-- PAGE TITLE -->
+  <section class="page-title-section" aria-label="Page title and breadcrumb navigation">
+    <div class="container">
+      <h1>Blog Page</h1>
+      <nav aria-label="Breadcrumb">
+        <p class="breadcrumb"><a href="index.html">Home</a> . <a href="grid default.html">Pages</a> . <a href="#"
+            aria-current="page">Blog Page</a></p>
+      </nav>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main>
+    <!-- BLOG POSTS -->
+    <section class="blog-posts" aria-label="Blog Posts">
+      <article class="blog-post">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/70fd3b42-82dc-43f3-bb36-e1dd47d64a8f.png"
+          alt="Woman with glasses looking at her smartphone in a modern office" loading="lazy" />
+        <div class="post-meta">
+          <span class="category" aria-label="Category Hobbies"><span class="material-icons"
+              aria-hidden="true">edit</span> Hobbies</span>
+          <span class="date" aria-label="Date posted August 9, 2020"><span class="material-icons"
+              aria-hidden="true">event</span> Aug 09 2020</span>
+        </div>
+        <div class="post-content">
+          <h2><a href="#">Mauris at orci non vulputate diam tincidunt nec.</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu
+            rutrum. Condimentum eu malesuada vitae ultricies in in neque, porta dignissim. Adipiscing purus, cursus
+            vulputate id id dictum at.</p>
+          <button class="read-more" aria-label="Read more about Mauris at orci non vulputate diam tincidunt nec.">
+            Read More
+            <span class="material-icons">arrow_forward</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d7832330-5a5a-44aa-bc09-b7635a2eb8de.png"
+          alt="Woman with long blonde hair looking at a dry landscape" loading="lazy" />
+        <div class="post-meta">
+          <span class="category" aria-label="Category Hobbies"><span class="material-icons"
+              aria-hidden="true">edit</span> Hobbies</span>
+          <span class="date" aria-label="Date posted August 9, 2020"><span class="material-icons"
+              aria-hidden="true">event</span> Aug 09 2020</span>
+        </div>
+        <div class="post-content">
+          <h2><a href="#">Aenean vitae in aliquam ultrices lectus. Etiam.</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu
+            rutrum. Condimentum eu malesuada vitae ultricies in in neque, porta dignissim. Adipiscing purus, cursus
+            vulputate id id dictum at.</p>
+          <button class="read-more" aria-label="Read more about Aenean vitae in aliquam ultrices lectus. Etiam.">
+            Read More
+            <span class="material-icons">arrow_forward</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/03875e6f-8a4d-415c-be3e-70c55e8823b3.png"
+          alt="Smiling young woman wearing a maroon beanie and winter scarf" loading="lazy" />
+        <div class="post-meta">
+          <span class="category" aria-label="Category Hobbies"><span class="material-icons"
+              aria-hidden="true">edit</span> Hobbies</span>
+          <span class="date" aria-label="Date posted August 9, 2020"><span class="material-icons"
+              aria-hidden="true">event</span> Aug 09 2020</span>
+        </div>
+        <div class="post-content">
+          <h2><a href="#">Sit nam congue feugiat nisl, mauris amet nisi.</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu
+            rutrum. Condimentum eu malesuada vitae ultricies in in neque, porta dignissim. Adipiscing purus, cursus
+            vulputate id id dictum at.</p>
+          <button class="read-more" aria-label="Read more about Sit nam congue feugiat nisl, mauris amet nisi.">
+            Read More
+            <span class="material-icons">arrow_forward</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Pagination -->
+      <nav aria-label="Blog pagination" class="pagination" role="navigation">
+        <button class="active" aria-current="page" aria-label="Page 1">1</button>
+        <button aria-label="Page 2">2</button>
+        <button aria-label="Page 3">3</button>
+        <button aria-label="Page 4">4</button>
+      </nav>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Blog Sidebar Widgets">
+      <!-- Search Widget -->
+      <section class="widget widget-search" aria-label="Search Posts">
+        <h3>Search</h3>
+        <form role="search" aria-label="Search the blog">
+          <input type="search" placeholder="Search For Posts" aria-label="Search For Posts" />
+        </form>
+      </section>
+
+      <!-- Categories Widget -->
+      <section class="widget widget-categories" aria-label="Blog Categories">
+        <h3>Categories</h3>
+        <ul class="categories-list" role="list">
+          <li><a href="#">Hobbies <span class="category-badge" aria-label="Category count 14">14</span></a></li>
+          <li><a href="#">Women <span class="category-badge" aria-label="Category count 21">21</span></a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Women</a></li>
+        </ul>
+      </section>
+
+      <!-- Recent Posts Widget -->
+      <section class="widget widget-recent-posts" aria-label="Recent Blog Posts">
+        <h3>Recent Post</h3>
+        <ul class="recent-posts" role="list">
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aab87893-85a7-47fa-b865-1cf76e809ed3.png"
+              alt="Thumbnail of blog post" loading="lazy" />
+            <div>
+              <a href="#">It is a long established fact</a>
+              <small>Aug 09 2020</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94a5c43b-be8d-480b-88c6-6bb9ce9c2490.png"
+              alt="Thumbnail of blog post" loading="lazy" />
+            <div>
+              <a href="#">It is a long established fact</a>
+              <small>Aug 09 2020</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1c9cdbf5-df20-4d36-9876-5247f4450a3c.png"
+              alt="Thumbnail of blog post" loading="lazy" />
+            <div>
+              <a href="#">It is a long established fact</a>
+              <small>Aug 09 2020</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2ab29fd1-2f73-4bb8-b207-7dece8bd0ea6.png"
+              alt="Thumbnail of blog post" loading="lazy" />
+            <div>
+              <a href="#">It is a long established fact</a>
+              <small>Aug 09 2020</small>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Sale Product Widget -->
+      <section class="widget widget-sale-products" aria-label="Sale Products">
+        <h3>Sale Product</h3>
+        <ul class="sale-products" role="list">
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/07c00d9a-509c-4d4d-a3dd-7c8c619993c5.png"
+              alt="Sale product image" loading="lazy" />
+            <div>
+              <a href="#">Elite ornare in enim mauris.</a>
+              <small>Aug 09 2020</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2e61e80c-bb4b-41ad-b734-876f8c335183.png"
+              alt="Sale product image" loading="lazy" />
+            <div>
+              <a href="#">Vivamus pulvinar et enim.</a>
+              <small>Aug 09 2020</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/efb6e23c-6c12-4bb5-a597-d68914546943.png"
+              alt="Sale product image" loading="lazy" />
+            <div>
+              <a href="#">Mattis varius donec facilisi</a>
+              <small>Aug 09 2020</small>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Offer product Widget -->
+      <section class="widget widget-offer-products" aria-label="Offer Products">
+        <h3>Offer product</h3>
+        <ul class="offer-products" role="list">
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4c1d1de1-67ca-4080-9e0a-a8329c280417.png"
+              alt="Offer product black sleek bag" loading="lazy" />
+            <div>
+              <a href="#">Duis lectus est.</a>
+              <small>$12.00 - $15.00</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b4c5d9f6-6a0d-48fa-ab07-62f5bd21488e.png"
+              alt="Offer product stylish bag" loading="lazy" />
+            <div>
+              <a href="#">Sed placerat.</a>
+              <small>$12.00 - $15.00</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/339a5a77-fde9-4bc7-87f0-53c76776fc6f.png"
+              alt="Offer product white ceramic cup" loading="lazy" />
+            <div>
+              <a href="#">Netus proin.</a>
+              <small>$12.00 - $15.00</small>
+            </div>
+          </li>
+          <li>
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bda634a2-afd7-4f3e-a028-57d563652ae9.png"
+              alt="Offer product white cylindrical lamp" loading="lazy" />
+            <div>
+              <a href="#">Platea in.</a>
+              <small>$12.00 - $15.00</small>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Follow Widget -->
+      <section class="widget widget-follow" aria-label="Follow Us">
+        <h3>Follow</h3>
+        <div class="follow" role="list">
+          <a href="#" class="facebook" aria-label="Follow us on Facebook" role="listitem"><span class="material-icons"
+              aria-hidden="true">facebook</span></a>
+          <a href="#" class="instagram" aria-label="Follow us on Instagram" role="listitem"><span class="material-icons"
+              aria-hidden="true">instagram</span></a>
+          <a href="#" class="twitter" aria-label="Follow us on Twitter" role="listitem"><span class="material-icons"
+              aria-hidden="true">twitter</span></a>
+        </div>
+      </section>
+
+      <!-- Tags Widget -->
+      <section class="widget widget-tags" aria-label="Tags">
+        <h3>Tags</h3>
+        <div class="tags">
+          <a href="#" role="button">General</a>
+          <a href="#" role="button">Atasnil</a>
+          <a href="#" role="button">Insas.</a>
+          <a href="#" role="button">Bibasas</a>
+          <a href="#" role="button">Nulla.</a>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hekto - Shop Left Sidebar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/shop_left_sidebar.css" />
+</head>
+
+<body>
+  <header>
+        <div class="container" style="display:flex; justify-content:space-between;flex-wrap:wrap; align-items:center;">
+            <div class="top-contact">
+                <a href="mailto:mhhasanul@gmail.com" aria-label="Email us at mhhasanul@gmail.com">
+                    <span class="material-icons" aria-hidden="true">email</span> mhhasanul@gmail.com
+                </a>
+                <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890">
+                    <span class="material-icons" aria-hidden="true">call</span> (123) 456-7890
+                </a>
+            </div>
+            <div class="top-actions" aria-label="User actions and language/currency settings">
+                <select aria-label="Select Language" name="language" id="language-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <select aria-label="Select Currency" name="currency" id="currency-select">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+                <a href="my account.html" aria-label="Login"><span class="material-icons"
+                        aria-hidden="true">login</span>Login</a>
+                <a href="wishlist.html" aria-label="Wishlist"><span class="material-icons"
+                        aria-hidden="true">favorite_border</span>Wishlist</a>
+                <a href="shopping cart.html" aria-label="Shopping Cart"><span class="material-icons"
+                        aria-hidden="true">shopping_cart</span></a>
+            </div>
+        </div>
+    </header>
+
+  <nav class="navbar container" role="navigation" aria-label="Primary"
+        style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 16px 0;">
+        <a href="index.html" class="logo"
+            style="font-size: 24px; font-weight: bold; text-decoration: none; color: #17173b;">Hekto</a>
+        <ul
+            style="display:flex; flex-direction:row; align-items:center; gap:32px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+            <li><a href="index.html" aria-current="page"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Home</a></li>
+            <li><a href="grid default.html" style="text-decoration:none; color:#17173b; font-weight:600;">Pages</a></li>
+            <li><a href="product details.html"
+                    style="text-decoration:none; color:#17173b; font-weight:600;">Products</a></li>
+            <li><a href="Blog Page.html" style="text-decoration:none; color:#17173b; font-weight:600;">Blog</a></li>
+            <li><a href="shop list.html" style="text-decoration:none; color:#17173b; font-weight:600;">Shop</a></li>
+            <li><a href="CONTACT US.html" style="text-decoration:none; color:#17173b; font-weight:600;">Contact</a></li>
+        </ul>
+        <form role="search" aria-label="Site Search">
+            <input type="search" aria-label="Search products" placeholder="Search product..." />
+            <button type="submit" class="search-btn" aria-label="Search">
+                <span class="material-icons" aria-hidden="true">search</span>
+            </button>
+        </form>
+    </nav>
+
+  <!-- Top bar -->
+
+
+  <!-- Main navbar -->
+
+
+  <!-- Breadcrumb area -->
+  <section class="breadcrumb-section" aria-label="breadcrumb navigation">
+    <div class="container">
+      <h1 class="breadcrumb-title">Shop Left Sidebar</h1>
+      <nav aria-label="Breadcrumb">
+        <p class="breadcrumb-list">
+          <a href="index.html">Home</a> &rsaquo;
+          <a href="grid default.html">Pages</a> &rsaquo;
+          <span aria-current="page">Shop Left Sidebar</span>
+        </p>
+      </nav>
+    </div>
+  </section>
+
+  <main class="content-area" role="main">
+
+    <!-- Sidebar Filters -->
+    <aside class="sidebar-filters" aria-label="Filter products">
+      <!-- Product Brand -->
+      <section>
+        <h3>Product Brand</h3>
+        <ul class="filter-list" role="list">
+          <li><label><input type="checkbox" checked> Coaster Furniture</label></li>
+          <li><label><input type="checkbox" checked> Fusion Dot High Fashion</label></li>
+          <li><label><input type="checkbox" checked> Unique Furniture Restor</label></li>
+          <li><label><input type="checkbox" checked> Dream Furniture Flipping</label></li>
+          <li><label><input type="checkbox" checked> Young Repurposed</label></li>
+          <li><label><input type="checkbox" checked> Green DIY furniture</label></li>
+        </ul>
+      </section>
+      <!-- Discount Offer -->
+      <section>
+        <h3>Discount Offer</h3>
+        <ul class="filter-list" role="list">
+          <li><label><input type="checkbox" checked> 20% Cashback</label></li>
+          <li><label><input type="checkbox" checked> 5% Cashback Offer</label></li>
+          <li><label><input type="checkbox" checked> 25% Discount Offer</label></li>
+        </ul>
+      </section>
+      <!-- Rating Item -->
+      <section>
+        <h3>Rating Item</h3>
+        <ul role="list">
+          <li class="rating-stars" aria-label="4 stars and 2341 reviews">
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="rating-count">(2341)</span>
+          </li>
+          <li class="rating-stars" aria-label="3 stars and 1726 reviews">
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="rating-count">(1726)</span>
+          </li>
+          <li class="rating-stars" aria-label="2 stars and 256 reviews">
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="rating-count">(256)</span>
+          </li>
+          <li class="rating-stars" aria-label="1 star and 95 reviews">
+            <span class="material-icons" aria-hidden="true">star</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="material-icons" aria-hidden="true">star_border</span>
+            <span class="rating-count">(95)</span>
+          </li>
+        </ul>
+      </section>
+      <!-- Categories -->
+      <section>
+        <h3>Categories</h3>
+        <ul class="filter-list" role="list">
+          <li><label><input type="checkbox" checked> Prestashop</label></li>
+          <li><label><input type="checkbox" checked> Magento</label></li>
+          <li><label><input type="checkbox" checked> Bigcommerce</label></li>
+          <li><label><input type="checkbox" checked> osCommerce</label></li>
+          <li><label><input type="checkbox" checked> 3dcart</label></li>
+          <li><label><input type="checkbox" checked> Bags</label></li>
+          <li><label><input type="checkbox" checked> Accessories</label></li>
+          <li><label><input type="checkbox" checked> Jewellery</label></li>
+          <li><label><input type="checkbox" checked> Watches</label></li>
+        </ul>
+      </section>
+      <!-- Price Filter -->
+      <section>
+        <h3>Price Filter</h3>
+        <ul class="filter-list" role="list">
+          <li><label><input type="checkbox" checked> $0.00 - $150.00</label></li>
+          <li><label><input type="checkbox" checked> $150.00 - $350.00</label></li>
+          <li><label><input type="checkbox" checked> $150.00 - $504.00</label></li>
+          <li><label><input type="checkbox" checked> $450.00 + </label></li>
+        </ul>
+        <input type="text" placeholder="$100.00 - 2000$" aria-label="Price range input"
+          style="margin-top: 8px; width: 100%; border-radius: 8px; padding: 8px 12px; border: 1px solid #ddd; font-size:14px;" />
+      </section>
+      <!-- Filter by Color -->
+      <section>
+        <h3>Filter By Color</h3>
+        <div class="color-filters">
+          <span class="color-dot blue" title="Blue"></span>
+          <span class="color-dot orange" title="Orange"></span>
+          <span class="color-dot brown" title="Brown"></span>
+          <span class="color-dot green" title="Green"></span>
+          <span class="color-dot purple" title="Purple"></span>
+          <span class="color-dot sky" title="Sky"></span>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Products List -->
+    <section aria-label="Product listings" class="product-list">
+      <div class="list-controls" aria-label="Product list controls">
+        <label>Per Page: <input type="number" min="1" max="100" value="10" style="width: 60px;"
+            aria-label="Number of products per page" /></label>
+        <label>Sort By:
+          <select aria-label="Sort products by">
+            <option value="bestMatch">Best Match</option>
+            <option value="priceLowToHigh">Price: Low to High</option>
+            <option value="priceHighToLow">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+        </label>
+        <label>View:
+          <select aria-label="Select view mode">
+            <option value="grid">Grid</option>
+            <option value="list" selected>List</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Each product card list entry below -->
+      <article class="product-card" tabindex="0" aria-label="Product: Dicum morbi, price $26, discount to $22">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb672a3c-baab-422e-a221-139431e0c604.png"
+          alt="White smart watch strap and round watch face on white background" class="product-img" loading="lazy" />
+        <div class="product-details">
+          <h2 class="product-title" tabindex="0">Dicum morbi</h2>
+          <div>
+            <span class="product-price">$26.00</span>
+            <span class="product-price original">$22.00</span>
+          </div>
+          <div class="product-rating" aria-label="Rated 4.5 stars">
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_half</span>
+          </div>
+          <p class="product-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in
+            phasellus non in justo.</p>
+          <div class="product-colors" aria-label="Available colors purple, orange, blue">
+            <span class="color-circle purple"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle blue"></span>
+          </div>
+        </div>
+        <div class="product-actions" role="group" aria-label="Product actions">
+          <button aria-label="Add Dicum morbi to cart"><span class="material-icons">shopping_cart</span></button>
+          <button aria-label="Add Dicum morbi to wishlist"><span class="material-icons">favorite_border</span></button>
+          <button aria-label="Quick view Dicum morbi"><span class="material-icons">search</span></button>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Product: Sodales sit, price $26, discount to $22">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8310d90a-14cc-4254-af46-20173066035a.png"
+          alt="Closeup of skincare product tube on stone background with water ripples" class="product-img"
+          loading="lazy" />
+        <div class="product-details">
+          <h2 class="product-title" tabindex="0">Sodales sit</h2>
+          <div>
+            <span class="product-price">$26.00</span>
+            <span class="product-price original">$22.00</span>
+          </div>
+          <div class="product-rating" aria-label="Rated 4 stars">
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_border</span>
+          </div>
+          <p class="product-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in
+            phasellus non in justo.</p>
+          <div class="product-colors" aria-label="Available colors purple, orange, blue">
+            <span class="color-circle purple"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle blue"></span>
+          </div>
+        </div>
+        <div class="product-actions" role="group" aria-label="Product actions">
+          <button aria-label="Add Sodales sit to cart"><span class="material-icons">shopping_cart</span></button>
+          <button aria-label="Add Sodales sit to wishlist"><span class="material-icons">favorite_border</span></button>
+          <button aria-label="Quick view Sodales sit"><span class="material-icons">search</span></button>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Product: Nibh varius, price $26, discount to $22">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f090f064-61f0-453e-a39a-ed751c3c7ec1.png"
+          alt="Brown leather shoes and folded clothes on wooden floor" class="product-img" loading="lazy" />
+        <div class="product-details">
+          <h2 class="product-title" tabindex="0">Nibh varius</h2>
+          <div>
+            <span class="product-price">$26.00</span>
+            <span class="product-price original">$22.00</span>
+          </div>
+          <div class="product-rating" aria-label="Rated 4 stars">
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_border</span>
+          </div>
+          <p class="product-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in
+            phasellus non in justo.</p>
+          <div class="product-colors" aria-label="Available colors purple, orange, blue">
+            <span class="color-circle purple"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle blue"></span>
+          </div>
+        </div>
+        <div class="product-actions" role="group" aria-label="Product actions">
+          <button aria-label="Add Nibh varius to cart"><span class="material-icons">shopping_cart</span></button>
+          <button aria-label="Add Nibh varius to wishlist"><span class="material-icons">favorite_border</span></button>
+          <button aria-label="Quick view Nibh varius"><span class="material-icons">search</span></button>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Product: Mauris quis, price $26, discount to $22">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8937ff83-5b91-46cc-8f3c-6717f2c4abbd.png"
+          alt="White gaming console with a controller on white table background" class="product-img" loading="lazy" />
+        <div class="product-details">
+          <h2 class="product-title" tabindex="0">Mauris quis</h2>
+          <div>
+            <span class="product-price">$26.00</span>
+            <span class="product-price original">$22.00</span>
+          </div>
+          <div class="product-rating" aria-label="Rated 4 stars">
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_border</span>
+          </div>
+          <p class="product-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in
+            phasellus non in justo.</p>
+          <div class="product-colors" aria-label="Available colors purple, orange, blue">
+            <span class="color-circle purple"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle blue"></span>
+          </div>
+        </div>
+        <div class="product-actions" role="group" aria-label="Product actions">
+          <button aria-label="Add Mauris quis to cart"><span class="material-icons">shopping_cart</span></button>
+          <button aria-label="Add Mauris quis to wishlist"><span class="material-icons">favorite_border</span></button>
+          <button aria-label="Quick view Mauris quis"><span class="material-icons">search</span></button>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Product: Morbi sagittis, price $26, discount to $22">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d6e9497-02b0-48ae-a3a6-9f4d4141319c.png"
+          alt="Pink cosmetic tube on a pink and cream wavy background with white flower" class="product-img"
+          loading="lazy" />
+        <div class="product-details">
+          <h2 class="product-title" tabindex="0">Morbi sagittis</h2>
+          <div>
+            <span class="product-price">$26.00</span>
+            <span class="product-price original">$22.00</span>
+          </div>
+          <div class="product-rating" aria-label="Rated 4 stars">
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_border</span>
+          </div>
+          <p class="product-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in
+            phasellus non in justo.</p>
+          <div class="product-colors" aria-label="Available colors purple, orange, blue">
+            <span class="color-circle purple"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle blue"></span>
+          </div>
+        </div>
+        <div class="product-actions" role="group" aria-label="Product actions">
+          <button aria-label="Add Morbi sagittis to cart"><span class="material-icons">shopping_cart</span></button>
+          <button aria-label="Add Morbi sagittis to wishlist"><span
+              class="material-icons">favorite_border</span></button>
+          <button aria-label="Quick view Morbi sagittis"><span class="material-icons">search</span></button>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0" aria-label="Product: Ultricies venenatis, price $26, discount to $22">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4c128e76-8c7c-4129-a393-e0d8179c7cb3.png"
+          alt="Brown hair care bottle on black silky cloth background" class="product-img" loading="lazy" />
+        <div class="product-details">
+          <h2 class="product-title" tabindex="0">Ultricies venenatis</h2>
+          <div>
+            <span class="product-price">$26.00</span>
+            <span class="product-price original">$22.00</span>
+          </div>
+          <div class="product-rating" aria-label="Rated 4 stars">
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_border</span>
+          </div>
+          <p class="product-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in
+            phasellus non in justo.</p>
+          <div class="product-colors" aria-label="Available colors purple, orange, blue">
+            <span class="color-circle purple"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle blue"></span>
+          </div>
+        </div>
+        <div class="product-actions" role="group" aria-label="Product actions">
+          <button aria-label="Add Ultricies venenatis to cart"><span
+              class="material-icons">shopping_cart</span></button>
+          <button aria-label="Add Ultricies venenatis to wishlist"><span
+              class="material-icons">favorite_border</span></button>
+          <button aria-label="Quick view Ultricies venenatis"><span class="material-icons">search</span></button>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0"
+        aria-label="Product: Scelerisque dignissim, price $26, discount to $22">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cab47d9e-4c8c-43f6-b37d-46cf5e57b9e6.png"
+          alt="Green retro style skater shoes with wooden background" class="product-img" loading="lazy" />
+        <div class="product-details">
+          <h2 class="product-title" tabindex="0">Scelerisque dignissim</h2>
+          <div>
+            <span class="product-price">$26.00</span>
+            <span class="product-price original">$22.00</span>
+          </div>
+          <div class="product-rating" aria-label="Rated 4 stars">
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star</span>
+            <span class="material-icons">star_border</span>
+          </div>
+          <p class="product-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in
+            phasellus non in justo.</p>
+          <div class="product-colors" aria-label="Available colors purple, orange, blue">
+            <span class="color-circle purple"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle blue"></span>
+          </div>
+        </div>
+        <div class="product-actions" role="group" aria-label="Product actions">
+          <button aria-label="Add Scelerisque dignissim to cart"><span
+              class="material-icons">shopping_cart</span></button>
+          <button aria-label="Add Scelerisque dignissim to wishlist"><span
+              class="material-icons">favorite_border</span></button>
+          <button aria-label="Quick view Scelerisque dignissim"><span class="material-icons">search</span></button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+        <div class="container footer-top">
+            <section class="footer-col">
+                <h4>Hekto</h4>
+                <form class="newsletter" aria-label="Newsletter signup form">
+                    <label for="email-newsletter" class="sr-only">Email address</label>
+                    <input type="email" id="email-newsletter" placeholder="Enter Email Address" aria-required="true" />
+                    <button type="submit">Sign Up</button>
+                </form>
+                <address>Contact Info<br />17 Princess Road, London, Greater London NW1 8JR, UK</address>
+            </section>
+            <section class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Laptops &amp; Computers</a></li>
+                    <li><a href="#">Cameras &amp; Photography</a></li>
+                    <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                    <li><a href="#">Video Games &amp; Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="my account.html">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Orders History</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="Blog Page.html">Blog</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container footer-bottom">
+            <div>
+                &copy; Webecy - All Rights Reserved
+            </div>
+            <div class="social-icons" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><span class="material-icons" aria-hidden="true">facebook</span></a>
+            </div>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/product-nav.js"></script>
+</body>
+
+</html>
